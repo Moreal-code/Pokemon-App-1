@@ -31,7 +31,7 @@ function PokemonApplication() {
         {pokemonName
           ? pokemonName.map((result) => {
               return (
-                <option key={uuidv4()} value={result.id}>
+                <option key={result.name} value={result.name}>
                   {result.name}
                 </option>
               );
